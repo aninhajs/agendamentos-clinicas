@@ -1,10 +1,10 @@
-const home = () => {
+import { Button } from "@/components/ui/button";
+const HomePage = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-fuchsia-800">
-        Bem vindo ao Doctor Agenda
-      </h1>
+    <div className="dark">
+      <Button>Click Aqui</Button>
     </div>
   );
 };
-export default home;
+
+export default HomePage;
