@@ -1,7 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import type { Metadata } from "next";
-// @ts-expect-error Next.js processes global CSS imports at build time.
+// @ts-ignore -- Next.js handles CSS imports at build time.
 import "./globals.css";
+
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
+        <Toaster position="bottom-center" richColors theme="light" />
       </body>
     </html>
   );
