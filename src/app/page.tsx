@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 const HomePage = () => {
   return (
-    <div className="dark">
+    <div>
       <Button>Click Aqui</Button>
     </div>
   );
