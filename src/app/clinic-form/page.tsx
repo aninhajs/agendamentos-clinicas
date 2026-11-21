@@ -12,7 +12,7 @@ const ClinicFormPage = () => {
   return (
     <div>
       <Dialog open>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-106.25">
           <DialogHeader>
             <DialogTitle>Adicionar clínica</DialogTitle>
             <DialogDescription>
