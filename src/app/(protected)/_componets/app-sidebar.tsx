@@ -100,7 +100,9 @@ export function AppSidebar() {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton size="lg">
                   <Avatar>
-                    <AvatarFallback>F</AvatarFallback>
+                    <AvatarFallback className="bg-[#0ea5e9] text-[#ffffff] hover:bg-[#0369a1]">
+                      AJ
+                    </AvatarFallback>
                   </Avatar>
                   <div>
                     <p className="text-sm">{session.data?.user.name}</p>
